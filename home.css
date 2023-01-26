@@ -1,0 +1,384 @@
+body {
+    /* background-image: url("bg home.jfif"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wel {
+    font-size: medium;
+    text-align-last: center;
+    margin: 0;
+}
+
+.navt {
+    background-color: rgb(135, 246, 248);
+}
+
+.name {
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.product {
+    width: 30em;
+    height: 30em;
+    margin-top: 2em;
+    margin-left: 5em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tet {
+    color: rgb(221, 70, 0);
+}
+
+.abt {
+    margin-left: 40em;
+    margin-top: -30em;
+}
+
+.info {
+    margin-top: 2em;
+    font-weight: lighter;
+}
+
+.last {
+    font-size: 1.5em;
+    text-align-last: center;
+    margin: 0;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    transition: 1s;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+
+/* nav btn */
+.btn {
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.7em 3em;
+    background: rgb(254, 80, 0);
+    color: #fff;
+    border-radius: 2em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0.2em 2em rgb(232, 139, 102);
+    transition: box-shadow 0.25s;
+}
+
+.btn:active {
+    background: rgb(135, 62, 14);
+    box-shadow: 0 0.2em 2em rgb(205, 118, 67);
+}
+
+.navv {
+    padding: 1em;
+}
+
+
+
+/* For name animation */
+.brand {
+    margin-top: 1vh;
+    background-image: linear-gradient(to right,
+            #02410b,
+            #570550 50%,
+            rgb(171, 88, 0) 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.brand:before {
+    content: '';
+    background: rgb(0, 0, 0);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+.brand:hover {
+    background-position: 0;
+}
+
+.brand:hover::before {
+    width: 100%;
+}
+
+
+
+/* Dropdown */
+.navi {
+    position: relative;
+    display: inline-block;
+}
+
+.down {
+    display: none;
+    position: absolute;
+    background-color: rgb(233, 213, 184);
+    z-index: 1002;
+    width: 25vw;
+    /* height: 50vh; */
+    padding: 2em;
+    margin: 0;
+}
+
+.down a:hover {
+    background-color: rgb(235, 119, 11);
+    color: white;
+}
+
+.navi:hover .down {
+    display: block;
+    padding: 1em;
+}
+
+.navi:hover .dropi {
+    background-color: transparent;
+}
+
+.nano {
+    text-decoration: none;
+    display: flex;
+    padding: 0.4em;
+    color: black;
+}
+
+
+
+/* search bar */
+.searubox {
+    position: absolute;
+    top: 1vh;
+    left: 90vw;
+    transform: translate(-50%, -50%);
+    height: 3em;
+    border-radius: 20em;
+    padding: 1.5em;
+    background: rgb(40, 39, 39);
+    margin-top: 2rem;
+}
+
+.searubox:hover>.searutxt {
+    width: 12em;
+    padding: 0 1.5em;
+}
+
+.searubox:hover>.searubtn {
+    background: rgb(234, 234, 234);
+}
+
+.searubtn {
+    color: chocolate;
+    float: right;
+    width: 0em;
+    height: 0em;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searutxt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    transition: 0.4s;
+    line-height: 0.5em;
+    width: 0em;
+    margin: -0.5em;
+}
+
+
+
+
+/* banner */
+.banner {
+    border-radius: 2rem;
+    width: 80%;
+    height: 35rem;
+    padding: 1rem;
+}
+
+.banje {
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.banje2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    /* preserve is to see back other side */
+}
+
+.banje:hover .banje2 {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.back {
+    background-color: rgb(123, 230, 244);
+    color: rgb(202, 125, 0);
+    transform: rotateY(180deg);
+    border-radius: 2rem;
+    width: 80%;
+    height: 35rem;
+    padding: 1rem;
+    margin-top: 1em;
+    margin-left: 8.5rem;
+}
+
+.back h1 {
+    color: black;
+    padding: 2rem;
+    margin-top: 4rem;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.back h4 {
+    padding: 2.5rem;
+}
+
+
+
+
+/* profile card */
+.colu {
+    width: 25%;
+    float: left;
+    padding: 0px 10px;
+    margin-left: 5.5rem;
+}
+
+.rowo::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rowo {
+    margin-top: 40rem;
+    margin-left: 21rem;
+}
+
+@media screen and (max-width: 600px) {
+    .colu {
+        width: 70%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.cardm {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border-bottom: 40px;
+    padding-bottom: 15px;
+}
+
+.titlu {
+    color: grey;
+    font-size: 18px;
+}
+
+.cardm a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.cardm a:hover {
+    opacity: 0.6;
+}
+
+
+
+
+/* media query for responsive */
+@media screen and (max-width: 992px) {
+    .searubox {
+        display: none;
+    }
+}
+
+@media(max-width: 476px) {
+    .con {
+        display: contents;
+    }
+
+    .back h4 {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+    .back h1 {
+        font-size: 1.5rem;
+        padding: 0rem;
+        margin-top: 1rem;
+    }
+
+    .name {
+        font-size: 1.3rem;
+    }
+
+    .down {
+        width: 45vw;
+    }
+
+    .back {
+        width: 80%;
+        height: 19rem;
+        margin-left: 2.3rem;
+    }
+
+    .banner {
+        border-radius: 2rem;
+        width: 80%;
+        height: 20rem;
+    }
+
+    .rowo {
+        margin-top: 21rem;
+        margin-left: -2.5rem;
+    }
+}

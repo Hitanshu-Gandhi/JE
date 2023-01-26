@@ -1,0 +1,147 @@
+body
+{
+    /* background-image: url("abt bg.avif"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.abtu
+{
+    position: relative;
+    margin-top: 1em;
+}
+
+.info
+{
+    margin-top: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: black;
+}
+
+.cad
+{
+    display: inline;
+    display: flex;
+    margin-left: 6.5em;
+    padding: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+
+.comp
+{
+    margin-left: 7em;
+}
+
+.hea
+{
+    font-size: x-large;
+    font-style: italic;
+    background-color: rgb(69, 223, 234);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.bod
+{
+    background-color: rgb(248, 238, 228);
+    color: black;
+}
+
+.cus
+{
+    margin-left: 13em;
+    margin-top: 5em;
+    display: flex;
+}
+
+#bux {
+    max-width: 70rem;
+    font-size: 1.5em;
+}
+
+
+/* media query */
+@media(max-width: 1342px) {
+    .cus {
+        margin-left: 2em;
+        margin-top: 2em;
+        margin-right: 2em;
+        display: flex;
+        align-content: center;
+    }
+
+    .hea {
+        font-size: x-large;
+    }
+
+    .bod{
+        font-size: large;
+    }
+
+    .bod h5 {
+        display: none;
+    }
+
+    .cad {
+        font-size: larger;
+        display: flex;
+        align-self: flex-start;
+        margin-left: -2em;
+    }
+
+    .comp {
+        margin-left: 2em;
+        margin-right: 2em;
+        display: flex;
+        align-self: flex-start;
+    }
+
+    #bux-2 {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    /* .mix{
+        display: flex;
+        flex-wrap: wrap;
+    } */
+}
+
+@media(max-width: 476px) {
+    .cus {
+        margin-left: 1em;
+        margin-top: 1em;
+        margin-right: 1em;
+        height: fit-content;
+    }
+
+    .hea {
+        font-size: medium;
+    }
+
+    .bod{
+        font-size: x-small;
+    }
+
+    .bod h5 {
+        display: none;
+    }
+
+    .cad {
+        font-size: small;
+        height: fit-content;
+        display: contents;
+    }
+
+    .comp {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    #bux-2 {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
